@@ -9,10 +9,14 @@ airflow users create \
     --firstname Hasan \
     --lastname Ozdemir \
     --role Admin \
-    --email hasanozdemir1@trakya.edu.tr
+    --email hasanozdemir1@trakya.edu.tr \
+    --password 12345
 
-# run webserver
+# run webserver localhost:8080
 airflow webserver --port 8080
 
 # run scheduler
 airflow scheduler
+
+# all of them in once
+airflow standalone
